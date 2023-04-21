@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      const arr01 = [1,2,3,4,5,6,7,8,9,10]
+
+      console.log(arr01);
+      console.log(...arr01);
+      console.log(arr01.join(" "));
+
+      console.log(arr01.push(11,12,13)); 
+      console.log(arr01.pop());
+      console.log(arr01.shift());
+      console.log(arr01.unshift(0,1));
+
+      console.log(...arr01);
+
+      console.log(...arr01.reverse());
+      console.log(...arr01.reverse());
+
+      console.log(arr01.length);
+      console.log(arr01.includes(1));
+      console.log(arr01.indexOf(5));
+
+      console.log(...arr01.filter(n=>n%2)); //if true then ignore
+      console.log(...arr01.map(n=>n%3)); //do task
+      console.log(arr01.reduce(n=>n%2)); //return only final value
+      
+      const a = ["Hareesh",30,100,"Bhittam",010,011]
+      console.log(...a.sort());
+      console.log(a.length);
+
+      console.log(...arr01.slice(2,9)); //return new array with first include and last exclude (Peace of array)
+      console.log(...arr01);
+
+                             // (fromWhere,howMany,nNumberOfElements)
+      console.log(...arr01.splice(2,5,50,60,70,80,90,100));
+      console.log(...arr01);
+
+
+      // // concat(): combines two or more arrays and returns a new array. For example:
+      // let array1 = [1, 2, 3];
+      // let array2 = [4, 5, 6];
+      // let combinedArray = array1.concat(array2);
+      // console.log(...combinedArray);
+      // console.log(...array1);
+      // // combinedArray is now [1, 2, 3, 4, 5, 6]
+
+      // // join(): creates and returns a new string by concatenating all of the elements in an array, separated by a specified separator string. For example:
+      // let array4 = [1, 2, 3, 4, 5];
+      // let string = array4.join(', ');
+      // // string is now "1, 2, 3, 4, 5"
+
+      // // pop(): removes the last element from an array and returns it. For example:
+      // let array5 = [1, 2, 3, 4, 5];
+      // let lastElement = array5.pop();
+      // // lastElement is now 5
+      // // array is now [1, 2, 3, 4]
+
+      // // push(): adds one or more elements to the end of an array and returns the new length of the array. For example:
+      // let array6 = [1, 2, 3, 4];
+      // let newLength1 = array6.push(5, 6, 7);
+      // // array is now [1, 2, 3, 4, 5, 6, 7]
+      // // newLength is now 7
+
+      // // reverse(): reverses the order of the elements in an array. For example:
+      // let array7 = [1, 2, 3, 4, 5];
+      // array7.reverse();
+      // // array is now [5, 4, 3, 2, 1]
+
+      // // shift(): removes the first element from an array and returns it. For example:
+      // let array8 = [1, 2, 3, 4, 5];
+      // let firstElement = array8.shift();
+      // // firstElement is now 1
+      // // array is now [2, 3, 4, 5]
+
+      // // slice(): returns a new array that includes a specified portion of an array. For example:
+      // let array9 = [1, 2, 3, 4, 5, 6, 7, 8];
+      // let newArray = array9.slice(2, 4);
+      // console.log(newArray);
+      // // newArray is now [3, 4]
+
+      // // sort(): sorts the elements of an array in place and returns the sorted array. For example:
+      // let array10 = [5, 2, 1, 4, 3];
+      // array10.sort();
+      // // array is now [1, 2, 3, 4, 5]
+
+      // // splice(): adds and/or removes elements from an array. For example:
+      // let array11 = [1, 2, 3, 4, 5];
+      // array11.splice(2, 2, 6, 7, 8);
+      // console.log(array11);
+
+      // // array is now [1, 2, 6, 7, 8, 5]
+
+      // const numbers1 = [10, 20, 30, 4, 5];
+
+      // // Remove the first two elements
+      // const removed1 = numbers1.splice(0, 2);
+
+      // console.log(numbers1); // Output: [3, 4, 5]
+      // console.log(removed1); // Output: [1, 2]
+
+      // const numbers = [1, 2, 3, 4, 5];
+
+      // // Replace the first two elements with new ones
+      // const removed = numbers.splice(0, 3, 6, 7, 10);
+
+      // console.log(numbers); // Output: [6, 7, 3, 4, 5]
+      // console.log(removed); // Output: [1, 2]
+
+      // const numbers2 = [1, 2, 3, 4, 5, 6];
+
+      // // Add the elements 6 and 7 after the second element
+      // numbers2.splice(2, 0, 6, 7, 8);
+
+      // console.log(numbers2); // Output: [1, 2, 6, 7, 3, 4, 5]
+
+      // // unshift(): adds one or more elements to the beginning of an array and returns the new length of the array. For example:
+      // let array12 = [1, 2, 3, 4, 5];
+      // let newLength = array12.unshift(6, 7, 8);
+      // // array is now [6, 7, 8, 1, 2, 3, 4, 5]
+      // // newLength is now 8
+
+      // let originalArray = [1, 2, 3, 4, 5];
+      // let array13 = originalArray.slice();
+      // array13.unshift(6, 7, 8);
+      // // originalArray is still [1, 2, 3, 4, 5]
+      // // array is now [6, 7, 8, 1, 2, 3, 4, 5]
+
+      // const numbers4 = [2, 4, 6, 8, 10];
+
+      // const areAllEven = numbers4.every((number) => number % 2 === 0);
+
+      // console.log(areAllEven); // Output: true
+
+      // const array15 = [1, 2, 3, 4, 5];
+
+      // // Fill the entire array with 0
+      // array15.fill(0);
+      // console.log(array15); // Output: [0, 0, 0, 0, 0]
+
+      // // Fill the array from index 2 to index 4 with 9
+      // array15.fill(9, 2, 4);
+      // console.log(array15); // Output: [0, 0, 9, 9, 0]
+
+      // // Fill the array from index 1 with 7
+      // array15.fill(7, 1);
+      // console.log(array15); // Output: [0, 7, 7, 7, 7]
+
+
+    </script>
+  </body>
+</html>

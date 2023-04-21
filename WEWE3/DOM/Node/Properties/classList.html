@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML | DOM classList Property
+	</title>
+	<style>
+		.mystyle {
+			align: center;
+			border: 1px solid black;
+			height: 100px;
+			padding-top: 35px;
+			background: lightgreen;
+			color: Black;
+			font-size: 70px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	
+
+<p>
+	Click the buttons to see the add and
+	remove of "mystyle" class to DIV.
+	</p>
+
+
+
+	<button onclick="myFunction()">
+	Add class
+	</button>
+
+	<div id="myDIV">
+		GeeksforGeeks
+	</div>
+
+	<script>
+		function myFunction() {
+
+			document.getElementById(
+				"myDIV").classList.add("mystyle");
+
+		}
+
+		function Remove() {
+			document.getElementById(
+				"myDIV").classList.remove("mystyle");
+		}
+	</script>
+
+	<button onclick="Remove()">Remove class</button>
+
+</body>
+
+</html>

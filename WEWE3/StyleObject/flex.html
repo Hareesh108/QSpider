@@ -1,0 +1,130 @@
+<!-- object.style.flex = "flex-grow flex-shrink flex-basis|auto|
+initial|inherit" -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML | DOM Style flex Property
+	</title>
+	<style>
+		#gfg {
+			width: 220px;
+			height: 60px;
+			border: 1px solid black;
+			display: -webkit-flex;
+			/* Safari */
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green;">
+		GeeksforGeeks
+		</h1>
+	
+		<h2 style="color: black;">
+		DOM Style flex Property
+		</h2>
+	
+	<div id="gfg">
+		<div style="background-color:green;">Geeks
+			<div style="background-color:lightblue;">For
+					<div style="background-color:green;">
+					Geeks
+					</div>
+			</div>
+		</div>
+	</div>
+		<br>
+	
+		<button onclick="GEEKS()">CLICK</button>
+	
+		<script>
+			function GEEKS() {
+				var x = document.getElementById("gfg");
+				var y = x.getElementsByTagName("DIV");
+				var i = 0;
+				for (i; i < y.length; i++) {
+					// IE10
+					y[i].style.msFlex = "1";
+				
+					// Safari 6.1+
+					y[i].style.WebkitFlex = "1";
+					y[i].style.flex = "1";
+				}
+			}
+		</script>
+	</center>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML | DOM Style flex Property
+	</title>
+	<style>
+		#gfg {
+			width: 220px;
+			height: 300px;
+			border: 1px solid black;
+			display: -webkit-flex;
+			/* Safari */
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<h1 style="color: green;">
+		GeeksforGeeks
+		</h1>
+		<h2 style="color: black;">
+		DOM Style flex Property
+		</h2>
+		<div id="gfg">
+			<div style="background-color:green;">
+			Geeks1
+		</div>
+			<div style="background-color:lightblue;">
+			For1
+		</div>
+			<div style="background-color:green;">
+			GEEKS1
+		</div>
+		</div>
+		<br>
+	
+		<button onclick="GEEKS()">CLICK</button>
+	
+		<script>
+			function GEEKS() {
+				var x =
+				document.getElementById("gfg");
+				var y =
+				x.getElementsByTagName("DIV");
+				var i = 0;
+				for (i; i < y.length; i++) {
+					// IE10
+					y[i].style.msFlex = "0";
+					// Safari 6.1+
+					y[i].style.WebkitFlex = "0";
+					y[i].style.flex = "1 125px";
+				}
+			}
+		</script>
+	</center>
+</body>
+
+</html> -->

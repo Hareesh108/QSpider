@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+
+        // Declaration along with initialization
+        var a = 10;
+        console.log(a)
+
+        // Redeclaration is possible
+        var a = 20;
+        console.log(a)
+
+        // Reinitialization is Possible
+        a = "Hareesh"
+        console.log(a)
+
+        // Hoisting is Possible: Before declaration we need to Initialized
+        hoist = "Hoisting"
+        var hoist
+        console.log(hoist)
+
+        
+        var hi = "harry"
+        function demo() {
+            console.log(hi);
+        }
+
+        hi = "Prince";
+        demo()
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<style>
+	h1,h2 {
+		font-weight: bold;
+		color: green;
+	}
+	
+	body {
+		margin-left: 130px;
+	}
+</style>
+
+<h1>GeeksforGeeks</h1>
+<h2>DOM appendChild() Method</h2>
+<ul id="gfg">
+	<li>Computer Network</li>
+	<li>Data Structures using C</li>
+</ul>
+<button onclick="geeks()">Submit</button>
+
+<script>
+	function geeks() {
+		var node = document.createElement("LI");
+		var textnode = document.createTextNode("Web Technology");
+		node.appendChild(textnode);
+		document.getElementById("gfg").appendChild(node);
+	}
+</script>
+
+<!-- 
+<style>
+	#sudo {
+		border: 1px solid green;
+		background-color: green;
+		margin-bottom: 10px;
+		color: white;
+		font-weight: bold;
+	}
+	
+	h1,h2 {
+		text-align: center;
+		color: green;
+		font-weight: bold;
+	}
+</style>
+<h1>GeeksforGeeks</h1>
+<h2>DOM appendChild() Method</h2>
+<div id="sudo">
+	The Good Website is learning for Computer Science is-
+</div>
+<button onclick="geeks()">Submit</button>
+<script>
+	function geeks() {
+		var node = document.createElement("P");
+		var t = document.createTextNode("GeeksforGeeks");
+		node.appendChild(t);
+		document.getElementById("sudo").appendChild(node);
+	}
+</script> -->

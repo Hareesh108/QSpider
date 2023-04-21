@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML DOM children Property
+	</title>
+
+	<!-- Script to count children of parent attribute -->
+	<script>
+		function Geeks() {
+			var count =
+				document.getElementById("parent").children.length;
+
+			document.getElementById("p").innerHTML =
+				"No of Children: " + count;
+		}
+	</script>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+
+	<h2>
+			DOM children Property
+		</h2>
+
+	<p>Searching Algorithms</p>
+
+	<ul id="parent">
+		<li>Merge sort</li>
+		<li>Quick sort</li>
+	</ul>
+
+	<button onclick="Geeks()">
+		Click Here!
+	</button>
+
+	<p id="p"></p>
+</body>
+
+</html>

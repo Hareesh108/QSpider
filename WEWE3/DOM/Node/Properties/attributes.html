@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML DOM attributes Property
+		</title>
+	</head>
+	
+	<body>
+	
+		<!-- Setting up an image -->
+		<img id = "GFG" src =
+"https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-logo.png" >
+		
+		<br>
+		<button onclick = "myGeeks()">
+			DOM attributes property
+		</button>
+		
+		<p id = "demo"></p>
+		
+		<script>
+			function myGeeks() {
+			
+			// It returns the number of nodes
+			var x = document.getElementById("GFG").attributes.length;
+			
+			// Display the number of nodes
+			document.getElementById("demo").innerHTML = x;
+		}
+		</script>
+	</body>
+</html>				
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML DOM attributes Property
+	</title>
+</head>
+
+<body>
+	<h2>
+			HTML DOM attributes Property
+		</h2>
+
+	<button id="GFG" onclick="myGeeks()">
+		Click Here!
+	</button>
+
+	<br>
+	<br>
+
+	<span>
+			Button element attributes:
+		</span>
+
+	<span id="sudo"></span>
+
+	<script>
+		function myGeeks() {
+
+			// It returns the number of nodes
+			var gfg =
+				document.getElementById("GFG").attributes.length;
+
+			// Display the number of nodes
+			document.getElementById("sudo").innerHTML = gfg;
+		}
+	</script>
+</body>
+
+</html> -->

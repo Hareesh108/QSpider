@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let human = {
+            adhar1 : {
+                name : "Rahul",
+                age : 23
+            },
+            adhar2 : {
+                name : "Hareesh",
+                age : 24
+            }
+        }
+
+        console.log(human);
+        console.log(human.adhar1);
+        console.log(human.adhar2.name);
+
+        human.adhar1.name = "Kiran"
+        console.log(human.adhar1);
+
+
+        console.log("Object for states: ");
+        let India = {
+            Maharashtra : {
+                name : "Eknath Shinde",
+                district : 36,
+                language : "Marathi"
+            },
+            Karnataka : {
+                name : "Basavaraj Bommai",
+                district : 31,
+                language : "Kannad"
+            },
+            Goa : {
+                name : "Pramod Sawant",
+                district : 2
+            }
+        }
+
+        console.log(India);
+
+
+                // BY USING LITRALS
+                let mobile={
+              company:"nokia",
+              price:1200,
+              spec:["128gb","8gb",8,5]
+        }
+        // console.log(mobile);
+        // console.log(mobile.price);
+        // mobile.price=500
+        // console.log(mobile);
+        console.log(mobile.spec);
+        console.log(mobile.spec[0]);
+        mobile.spec[0]=256
+        console.log(mobile.spec);
+
+        // BY USING NEW KEYWORD
+        // let human=new Object()
+        // human.name="laila"
+        // human.age=23
+        // console.log(human);
+
+
+        // BY USING FUNCTION
+         let emp= function name(name,sal,age) {
+              this.name=name;
+              this.sal=sal;
+              this.age=age
+          }
+          let abc=new emp("abc",1100,24)
+          console.log(abc);
+          let xyz=new emp("xyz",12500,25)
+          console.log(xyz);
+    </script>
+    
+</body>
+</html>

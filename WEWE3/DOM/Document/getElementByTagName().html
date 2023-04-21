@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Tag Name Selector</title>
+</head>
+<body>
+
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+
+    <script>
+        const element = document.getElementsByTagName("h1");
+
+        element[0].innerHTML = "This is H1 with index 0"
+        element[0].style.color = "red"
+        element[1].innerHTML = "This is H1 with index 1"
+        element[1].style.color = "hotpink"
+        element[2].innerHTML = "This is H1 with index 2"
+        element[2].style.color = "orange"
+        element[3].innerHTML = "This is H1 with index 3"
+        // element[3].innerHTML = prompt("Enter text")
+        element[3].style.color = "blue"
+
+    </script>
+    
+</body>
+</html>

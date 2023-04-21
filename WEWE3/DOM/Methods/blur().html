@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title>HTML DOM blur() Method</title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color:green;">
+			GeeksforGeeks
+		</h1>
+
+	<h2>
+			DOM blur Property
+		</h2>
+
+	<input type="text" id="txt" placeholder="Enter text here">
+	<br>
+	<br>
+	<button type="button" onclick="inputFocus()">Focus</button>
+	<button type="button" onclick="inputBlur()">Blur</button>
+
+	<script>
+		function inputFocus() {
+			document.getElementById('txt').focus();
+		}
+
+		function inputBlur() {
+			document.getElementById('txt').blur();
+		}
+	</script>
+</body>
+
+</html>

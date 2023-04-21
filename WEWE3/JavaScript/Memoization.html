@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      function add(x, y) {
+        return x + y;
+      }
+
+      let cache = {};
+
+      function memoizedAdd(x, y) {
+        if (cache[x] && cache[x][y]) {
+          return cache[x][y];
+        } else {
+          let result = add(x, y);
+          if (!cache[x]) cache[x] = {};
+          cache[x][y] = result;
+          return result;
+        }
+      }
+
+      console.log(memoizedAdd(1, 2)); // Output: 3
+      console.log(memoizedAdd(1, 2)); // Output: 3 (retrieved from cache)
+      console.log(memoizedAdd(2, 3)); // Output: 5
+      console.log(memoizedAdd(2, 3)); // Output: 5 (retrieved from cache)
+    </script>
+  </body>
+</html>

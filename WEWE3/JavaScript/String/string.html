@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = 'hello';
+      str = 'bye'; //String is replaceable
+      console.log(str);
+      str[2] = 'a'; //String is not mutable
+      console.log(str);
+
+      // Using New Keyword
+      let str1 = new String('Hello');
+      console.log(str1);
+
+      // for (let index = 0; index < str1.length; index++) {
+      //     console.log(index);
+
+      // }
+
+      let str2 = 'I am Hareesh';
+      console.log(str2.length);
+
+      let str3 = 'slice';
+      console.log(str3.slice(1, 3));
+
+      // startswith(value) : it is used
+      let str4 = 'mumbai';
+      console.log(str4.startsWith('m'));
+
+      // endsWith()
+      let str5 = 'dubai';
+      console.log(str5.endsWith('i'));
+
+      // repeat()
+      let str6 = 'Haryy';
+      console.log(str6.repeat(3));
+      console.log(str6[3].repeat(3));
+
+      // replace()
+      let str7 = 'Mumbai to goa';
+      console.log(str7.replace('Mumbai', 'pune'));
+
+      // uppercase()
+      let str8 = 'uppercase';
+      console.log(str8.toUpperCase());
+
+      // lowercase()
+      let str9 = 'LOWERCASE';
+      console.log(str9.toLowerCase());
+
+    //  trim()
+    let str10 = "  trimming";
+    console.log(str10);
+    console.log(str10.trim());
+    str10 = "  trimming";
+    console.log(str10);
+    console.log(str10.trimStart());
+    console.log(str10.trimEnd());
+
+    // split()
+    let str11 = "split";
+    console.log(str11.split(""));
+    str11 = "split split";
+    console.log(str11.split(" "));
+    str11 = "split split";
+    console.log(str11.split("l"));
+
+    // charAt()
+    let str12 = "charAt";
+    console.log(str12.charAt(3));
+    str12 = "charCodeAt";
+    console.log(str12.charCodeAt(3));
+
+    // Substring()
+    let str13 = "Hareesh"
+    console.log(str13.substring(1,4));
+
+    // include
+    let str14 = "harry";
+    console.log(str14.includes("a"));
+
+    // indexOf()
+    let str15 = "indexOf";
+    console.log(str15.indexOf("n"));
+
+    </script>
+
+    
+  </body>
+</html>

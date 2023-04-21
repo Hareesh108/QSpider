@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM getElementByClassName() Method</title>
+	<style>
+	h1 {
+		color: green;
+	}
+	
+	body {
+		text-align: center;
+	}
+	
+	.example {
+		padding: 10px;
+		margin: auto;
+		margin-top: 10px;
+		border: 1px solid black;
+		width: 300px;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>DOM getElementByClassName() Method</h2>
+	<div>
+		<h4 class="example">div1</h4>
+		<h4 class="yellowBorder example">div2</h4>
+		<h4 class="greenBorder example">div3</h4>
+		<h4 class="example">div4</h4> </div>
+	<script>
+	document.getElementsByClassName('greenBorder example')[0].style.border =
+	"10px solid green";
+	document.getElementsByClassName('yellowBorder example')[0].style.border =
+	"10px solid yellow";
+	</script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM getElementByClassName() Method</title>
+	<style>
+	h1 {
+		color: green;
+	}
+	
+	body {
+		text-align: center;
+	}
+	
+	button {
+		background-color: black;
+		color: white;
+		width: 300px;
+		padding: 10px;
+		margin: 10px;
+		cursor: pointer;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>DOM getElementByClassName() Method</h2>
+	<div>
+		<button onclick="red()" class="black red">
+			Click to change to red button
+		</button>
+		<br>
+		<button onclick="blue()" class="black blue">
+			Click to change to blue button
+		</button>
+		<br>
+		<button onclick="yellow()" class="black yellow">
+			Click to change to yellow button
+		</button>
+		<br>
+		<button onclick="black()">
+			Click to change to all buttons to initial state
+		</button>
+	</div>
+	<script>
+	function red() {
+		document.getElementsByClassName('red')[0]
+		.style.backgroundColor = 'red';
+	}
+
+	function blue() {
+		document.getElementsByClassName('blue')[0]
+		.style.backgroundColor = 'blue';
+	}
+
+	function yellow() {
+		document.getElementsByClassName('yellow')[0]
+		.style.backgroundColor = 'yellow';
+	}
+
+	function black() {
+		var elements = document.getElementsByClassName('black');
+		for(var i = 0; i < elements.length; i++) {
+			elements[i].style.backgroundColor = 'black';
+		}
+	}
+	</script>
+</body>
+
+</html> -->

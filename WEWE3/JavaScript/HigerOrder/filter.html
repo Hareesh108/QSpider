@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+        // function isPrime(n) {
+        //   if (n <= 1) return false;
+        //   const wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //   const possibleFactors = filter((m) => m > 1 && m < n, wholes);
+        //   const factors = filter((m) => n % m === 0, possibleFactors);
+        //   return factors.length === 0 ? true : false;
+        // }
+
+    //   function isEven(n) {
+    //     return n % 2 === 0;
+    //   }
+
+    //   const primes = filter(isPrime, wholes);
+    //   console.log(primes);
+
+    
+
+    // console.log(wholes.filter(isPrime));
+
+
+
+//     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// // Use the filter function to only get even numbers
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+// console.log(evenNumbers); // [2, 4, 6, 8, 10]
+
+const wholes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+function isEven(n) {
+  return n % 2 === 0;
+}
+
+let evens = filter(isEven, wholes)
+console.log(evens);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #linear-gradient{
+            height: 200px;
+            width: 400px;
+            border: 1px solid;
+            margin: 0 auto;
+            background-image: linear-gradient(180deg, rgb(255, 98, 0),rgb(243, 243, 220),rgb(6, 195, 72));
+
+        }
+        #radial-gradient{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-radius: 50%;
+            background-image: radial-gradient(rgb(6, 195, 72),rgb(243, 243, 220),rgb(255, 98, 0));
+
+        }
+        #conic-gradient1{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-radius: 50%;
+            background-image: conic-gradient(red 0deg, red 90deg,blue 90deg, blue 180deg, black 180deg, black 270deg, green 270deg, green 360deg );
+        }
+
+        #conic-gradient2{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 30px;
+            /* border-radius: 50%; */
+            background-image: conic-gradient(red -45deg, red 45deg,blue 45deg, blue 135deg, black 135deg, black 225deg, green 225deg, green 315deg, red 315deg);
+        }
+
+        #linear-gradient{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 30px;
+            /* border-radius: 50%; */
+            background-image: linear-gradient(red -45deg, red 45deg,blue 45deg, blue 135deg, black 135deg, black 225deg, green 225deg, green 315deg, red 315deg);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- linear-gradient -->
+    <div id="linear-gradient"></div>
+    <!-- radial-gradient -->
+    <div id="radial-gradient"></div>
+    <!-- conic-gradient -->
+    <div id="conic-gradient1"></div>
+    <div id="conic-gradient2"></div>
+
+    <!--  -->
+      
+</body>
+</html>

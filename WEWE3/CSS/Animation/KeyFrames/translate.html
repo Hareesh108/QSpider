@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        div{
+            width: 600px;
+            /* margin: 0 auto; */
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: aqua;
+            
+            /* We can have multiple names */
+            /* animation: round 5s both; */
+            animation-name: round,colorChange;
+            animation-duration: 5s;
+            /* animation-fill-mode : both / forwards / backwards */
+            animation-fill-mode: both;
+            /* You can give number */
+            animation-iteration-count: infinite;
+            /* reverse,alternate, alternate-reverse  */
+            animation-direction: alternate-reverse;
+        }
+        @keyframes round {
+            /* We can make group like that */
+            /* 0%,100% {
+                transform: none;
+            } */
+            /* We can also do like that from = 0%, to= 100% */
+            from, to {
+                transform: none;
+            }
+            25%{
+                animation-timing-function: linear;
+                transform: translateX(150px) ;
+            }
+            50%{
+                transform: translateX(150px) translateY(150px);
+            }
+            75%{
+                transform: translateX(0px) translateY(150px);
+            }
+            /* 100%{
+                transform: none;
+            } */
+        }
+        @keyframes colorChange{
+            from{
+                background: rgb(255, 234, 8);
+            }
+            to{
+                background: rgb(255, 106, 0);
+            }
+        }
+
+        /* div:nth-child() */
+
+    </style>
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+    
+</body>
+</html>

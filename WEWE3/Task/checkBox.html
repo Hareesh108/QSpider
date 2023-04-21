@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">Hobbies</label> <br>
+    <label for="">art</label>
+    <input type="checkbox" name="hobbies" value="art" checked >
+    <label for="">video</label>
+    <input type="checkbox" name="hobbies" value="video" checked >
+    <label for="">photo</label>
+    <input type="checkbox" name="hobbies" value="photo"  >
+
+    <p id="print"></p>
+    <script>
+
+        const check = document.getElementsByName("hobbies")
+        // console.log(check);
+
+        const hobbies = [];
+        for (let i = 0; i < check.length; i++) {
+            if (check[i].checked) {
+                hobbies.push(check[i].value);
+            }    
+        }
+
+        console.log(hobbies);
+
+    // const print = document.getElementById("print")
+    // for (const i in hobbies) {
+    //         console.log(hobbies[i]);
+    //         print.innerHTML = hobbies[i];
+    //     }
+
+    </script>
+
+    
+</body>
+</html>

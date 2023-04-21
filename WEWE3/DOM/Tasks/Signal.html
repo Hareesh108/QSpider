@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 400px;
+        width: 150px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        background-color: #FFEBAD;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: aliceblue;
+      }
+      #bar {
+        width: 70px;
+        height: 150px;
+        background-color: #A5F1E9;
+        border-radius: 0px;
+      }
+      #bar2{
+        width: 200px;
+        height: 30px;
+        background-color: #7FE9DE;
+      }
+    </style>
+  </head>
+  <body>
+    <div >
+      <div class="box" id="box1" onclick="change1()">RED</div>
+      <div class="box" id="box2" onclick="change2()">YELLOW</div>
+      <div class="box" id="box3" onclick="change3()">GREEN</div>
+    </div>
+    <div id="bar" ></div>
+    <div id="bar2" ></div>
+
+    <script>
+      const box1 = document.getElementById('box1');
+      const box2 = document.getElementById('box2');
+      const box3 = document.getElementById('box3');
+
+      function change1() {
+        box1.style.backgroundColor = 'red';
+
+        box2.style.backgroundColor = 'white';
+        box3.style.backgroundColor = 'white';
+
+        setTimeout(() => {
+          box1.style.backgroundColor = 'white';
+          change2()
+        }, 3000);
+      }
+
+      function change2() {
+        box2.style.backgroundColor = 'yellow';
+
+        box1.style.backgroundColor = 'white';
+        box3.style.backgroundColor = 'white';
+
+        setTimeout(() => {
+          box2.style.backgroundColor = 'white';
+          change3()
+        }, 3000);
+      }
+      function change3() {
+        box3.style.backgroundColor = 'green';
+
+        box1.style.backgroundColor = 'white';
+        box2.style.backgroundColor = 'white';
+
+        setTimeout(() => {
+          box3.style.backgroundColor = 'white';
+          change1()
+        }, 3000);
+      }
+
+    </script>
+  </body>
+</html>

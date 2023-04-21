@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // IMMEDIATELY INVOKED FUNCTION EXPRESSION
+
+      let life = (function () {
+        console.log('This is life');
+      })();
+      // console.log(life());
+
+      const result = (function (a, b) {
+        return a + b;
+      })(2, 3);
+
+      console.log(result); // Output: 5
+
+      (function () {
+        const message = 'Hello from an IIFE!';
+        console.log(message);
+      })();
+
+      // Some other code that might overwrite the message variable
+
+      console.log(message); // Output: "Hello from an IIFE!"
+    </script>
+  </body>
+</html>

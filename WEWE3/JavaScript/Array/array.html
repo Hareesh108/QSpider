@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+
+  const mixed = [1, 'two', false, [3, 4]];
+
+  console.log(mixed[0]); // outputs 1 (the first item in the array)
+  console.log(mixed[2]); // outputs false (the third item in the array)
+  console.log(mixed.length); // outputs 4 (the number of items in the array)
+
+  mixed.push('five'); // adds 'five' to the end of the array
+  console.log(mixed); // outputs [1, 'two', false, [3, 4], 'five']
+
+  mixed.unshift(0); // adds 0 to the beginning of the array
+  console.log(mixed); // outputs [0, 1, 'two', false, [3, 4], 'five']
+
+  mixed.shift();
+  console.log(mixed);
+
+  
+</script>

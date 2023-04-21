@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM getElementsByName()</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		
+		h1 {
+			color: green;
+		}
+	</style>
+	<script>
+		// creating geeks function to display
+		// number of elements at particular name
+		function geeks() {
+
+			// taking list of elements under name ga
+			var x = document.getElementsByName("ga");
+
+		// printing number of elements inside alert tag
+		alert("Total element with name ga are: " + x.length);
+		}
+	</script>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>DOM getElementsByName() Method</h2>
+
+	<!-- creating tag with name ga -->
+	<h4 name="ga">Geeks</h4>
+	<h4 name="ga">for</h4>
+	<h4 name="ga">Geeks</h4>
+
+	<input type="button" onclick="geeks()"
+						value="Click here" />
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM getElementsByName()</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		
+		h1 {
+			color: green;
+		}
+	</style>
+	<script>
+		// creating geeks function to display
+		// elements at particular name
+		function geeks() {
+
+			// This line will print entered result
+			alert(document.getElementsByName("ga")[0].value);
+
+		}
+	</script>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>DOM getElementsByName() Method</h2>
+
+	<!-- This will create an input tag-->
+	<input type="text" name="ga" />
+	<br>
+	<br>
+	<!-- function will be called when we
+	click on this button-->
+	<input type="button" onclick="geeks()"
+						value="Click here" />
+	<p></p>
+</body>
+
+</html> -->
+					

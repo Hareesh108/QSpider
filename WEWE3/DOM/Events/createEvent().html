@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			DOM createEvent() Event Method
+		</title>
+		
+		<style>
+			div {
+				padding:50px;
+				text-align:center;
+				background-color: green;
+				color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<script>
+			document.body.onclick = function() {
+				document.getElementById("Geeks").innerHTML
+							= "Welcome to GeeksforGeeks!";
+			};
+			
+			var onClick = function() {
+				var evt = document.createEvent("MouseEvents");
+				evt.initMouseEvent
+					("click", true, true, window, 0, 0, 0, 0,
+					0, false, false, false, false, 0, null);
+				document.body.dispatchEvent(evt);
+			}
+			
+			onClick();
+		</script>
+		
+		<div id = "Geeks"></div>
+	
+	</body>
+</html>				

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+
+    <div class="box" ></div>
+    <button onclick="box1()" >BOX1</button>
+    <div class="box" ></div>
+    <button onclick="box2()" >BOX2</button>
+    <div class="box" ></div>
+    <button onclick="box3()" >BOX3</button>
+
+    <script>
+
+        let boxes = document.getElementsByClassName("box")
+
+        function box1() {
+            boxes[0].style.height = "200px";
+            boxes[0].style.width = "200px";
+            boxes[0].style.backgroundColor = "red";
+            boxes[0].innerHTML = "BOX1";
+2
+        }
+
+        function box2() {
+            boxes[1].style.height = "200px";
+            boxes[1].style.width = "200px";
+            boxes[1].style.backgroundColor = "blue";
+            boxes[1].innerHTML = "BOX2";
+        }
+
+        function box3() {
+            boxes[2].style.height = "200px";
+            boxes[2].style.width = "200px";
+            boxes[2].style.backgroundColor = "yellow";
+            boxes[2].innerHTML = "BOX3";
+        }
+
+    </script>
+
+    
+</body>
+</html>

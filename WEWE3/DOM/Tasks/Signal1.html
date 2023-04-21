@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 400px;
+        width: 150px;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        background-color: #ffebad;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: aliceblue;
+      }
+      #bar {
+        width: 70px;
+        height: 150px;
+        background-color: #a5f1e9;
+        border-radius: 0px;
+      }
+      #bar2 {
+        width: 200px;
+        height: 30px;
+        background-color: #7fe9de;
+      }
+    </style>
+  </head>
+  <body onload="change()">
+    <div>
+      <div class="box" id="box1">RED</div>
+      <div class="box" id="box2">YELLOW</div>
+      <div class="box" id="box3">GREEN</div>
+    </div>
+    <div id="bar"></div>
+    <div id="bar2"></div>
+
+    <script>
+      let colorIndex = 0;
+      const colors = ['red', 'yellow', 'green'];
+
+      let classIndex = 0;
+
+      function change() {
+        const box = document.getElementsByClassName('box');
+
+        for (let index = 0; index < box.length; index++) {
+          box[index].style.backgroundColor = 'white';
+        }
+
+        box[classIndex].style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+        classIndex++;
+
+        if (classIndex == 3) classIndex = 0;
+        if (colorIndex == 3) colorIndex = 0;
+      }
+
+      setInterval(change, 2000);
+      
+    </script>
+  </body>
+</html>

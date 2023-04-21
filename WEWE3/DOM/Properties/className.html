@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML | DOM className Property
+	</title>
+	<style>
+		.do_style {
+			width: 600px;
+			height: 100px;
+			background-color: lightgreen;
+			text-align: center;
+			font-size: 25px;
+			color: green;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>Click the button to set a class for div.</p>
+
+	<div id="div1">
+		GeeksforGeeks
+	</div>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<script>
+		function myFunction() {
+			document.getElementById("div1").className =
+				"do_style";
+		}
+	</script>
+
+</body>
+
+</html>

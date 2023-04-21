@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Connection</title>
+
+    <link rel="stylesheet" href="./Connection.css" />
+
+    <!-- Internal Connection Second Priority -->
+    <style>
+      h2 {
+        color: rgb(230, 27, 27);
+        border: 2px solid;
+      }
+      
+      h4{
+        color: blueviolet ;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Implementation CSS -->
+
+    <!-- Inline CSS First Priority -->
+    <h1 style="color: rgb(82, 19, 254); border: 2px solid">
+      This is Inline CSS H1
+    </h1>
+
+    <!-- Internal Connection Second Priority -->
+    <h2>This is Internal CSS H2</h2>
+
+    <!-- External Connection Third Priority -->
+    <h3>This is External CSS H3</h3>
+
+    <!-- How to Priority Change : Using !important -->
+    <h4 style="color:yellow ">This is Priority Changed </h4>
+  </body>
+</html>

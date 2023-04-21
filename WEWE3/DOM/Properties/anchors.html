@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM anchors collection</title>
+		<style>
+			.gfg {
+				font-size:40px;
+				font-weight:bold;
+				color:green;
+			}
+			body {
+				text-align:center;
+				font-family:Times;
+			}
+		</style>
+	</head>
+	<body>
+		<a name="" class="gfg">GeeksforGeeks</a>
+		<h2>DOM anchors Collection</h2>
+		<a name="">GeeksforGeeks</a><br>
+		<a name="">Sudo Placement</a><br>
+		<a name="">GFG</a><br><br>
+		<button onclick="Geeks()">Submit</button>
+		<p id="sudo"></p>
+
+
+		<script>
+			function Geeks() {
+				var x = document.anchors.length;
+				document.getElementById("sudo").innerHTML =
+				"Number of Anchors elements: " + x;
+			}
+		</script>
+	</body>
+</html>				
+
+<!-- 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM anchors collection</title>
+		<style>
+			.gfg {
+				font-size:40px;
+				font-weight:bold;
+				color:green;
+			}
+			body {
+				text-align:center;
+				font-family:Times;
+			}
+		</style>
+	</head>
+	<body>
+		<a name="" class="gfg">GeeksforGeeks</a>
+		<h2>DOM anchors Collection</h2>
+		<a name="">GeeksforGeeks</a><br>
+		<a name="">Sudo Placement</a><br>
+		<a name="">GFG</a><br><br>
+		<button onclick="Geeks()">Submit</button>
+		<p id="sudo"></p>
+
+
+		<script>
+			function Geeks() {
+				var x = document.anchors[2].innerHTML;
+				document.getElementById("sudo").innerHTML =
+				"Second Anchor element: " + x;
+			}
+		</script>
+	</body>
+</html>				 -->

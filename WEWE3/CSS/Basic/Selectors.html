@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      *{
+        background-color: rgb(69, 65, 66);
+      }
+
+      h1 {
+        color: rgb(5, 255, 155);
+      }
+      #heading {
+        color: rgb(255, 0, 0);
+        background-color: cadetblue;
+      }
+      .classHeading {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Priority -->
+    <!-- !Important -> Id -> Class -> Element -->
+
+    <!-- Element Selector -->
+    <h1>This is Element Selector</h1>
+
+    <!-- ID Selector uniquly -->
+    <h1 id="heading">This is ID Selector</h1>
+
+    <!-- This is Class Selector -->
+    <h1 class="classHeading">This is Class Selector</h1>
+    <h2 id="heading" class="classHeading">This is Priority Selector</h2>
+    <h3 class="classHeading">This is Class Selector</h3>
+    <h4 class="classHeading">This is Class Selector</h4>
+    <h2>This is Universal Selector</h2>
+
+    <!-- Universal Selector -->
+
+  </body>
+</html>

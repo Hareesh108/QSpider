@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      const numbers = [1, 2, 3];
+      const expandedNumbers = [...numbers, 4, 5, 6];
+      // expandedNumbers is [1, 2, 3, 4, 5, 6]
+
+      const person = { name: 'John', age: 30 };
+      const expandedPerson = { ...person, location: 'New York' };
+      // expandedPerson is { name: 'John', age: 30, location: 'New York' }
+
+      const originalArray = [1, 2, 3];
+      const copiedArray = [...originalArray];
+      // copiedArray is [1, 2, 3]
+
+      const originalObject = { name: 'John', age: 30 };
+      const copiedObject = { ...originalObject };
+      // copiedObject is { name: 'John', age: 30 }
+
+    </script>
+  </body>
+</html>

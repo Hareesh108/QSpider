@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function outerFunction() {
+        let outerVariable = 'I am an outer variable';
+
+        function innerFunction() {
+          console.log(outerVariable); // Output: "I am an outer variable"
+        }
+
+        return innerFunction;
+      }
+
+      const closure = outerFunction();
+      console.log(closure()); // Output: "I am an outer variable"
+
+      function createCounter() {
+        let count = 0;
+
+        return {
+          increment() {
+            count++;
+          },
+          getCount() {
+            return count;
+          },
+        };
+      }
+
+      const counter = createCounter();
+      counter.increment();
+      console.log(counter.getCount()); // Output: 1
+
+
+      
+    </script>
+  </body>
+</html>

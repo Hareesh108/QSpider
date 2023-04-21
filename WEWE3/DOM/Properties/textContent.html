@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML DOM textContent Property
+		</title>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>HTML DOM textContent Property</h2>
+		
+		<button id = "geeks" onclick = "MyGeeks()">
+			Submit
+		</button>
+		
+		<p id = "sudo"></p>
+
+
+		<script>
+		function MyGeeks() {
+			var text =
+				document.getElementById("geeks").textContent;
+			document.getElementById("sudo").innerHTML = text;
+		}
+		</script>
+	</body>
+</html>					
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML DOM textContent Property
+		</title>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>HTML DOM textContent Property</h2>
+		
+		<p id = "geeks" onclick = "MyGeeks()">
+			Hello Geeks!
+		</p>
+
+
+		
+		<script>
+			function MyGeeks() {
+				document.getElementById("geeks").textContent
+				= "Welcome to GeeksforGeeks!";
+			}
+		</script>
+	</body>
+</html>					 -->

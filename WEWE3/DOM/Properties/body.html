@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM body property</title>
+		<style>
+			body {
+				text-align:center;
+			}
+			h1 {
+				color:green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>DOM body property</h2>
+		<button onclick="geeks()">Submit</button>
+		<p id = "gfg"></p>
+
+
+
+		<script>
+			function geeks() {
+				var x = document.body.innerHTML;
+				document.getElementById("gfg").innerHTML =
+				"Display the body content:<br>" + x;
+			}
+		</script>
+	</body>
+</html>				
+
+
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM body property</title>
+		<style>
+			h1 {
+				color:green;
+			}
+			body {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>DOM body property</h2>
+		<button onclick="geeks()">Submit</button>
+		<script>
+			function geeks() {
+				document.body.innerHTML = "<h1>"
+				+ "GeeksforGeeks"
+				+ "</h1>" + "<br>" + "<h2>"
+				+ "New Content Added"
+				+ "</h2>";
+			}
+		</script>
+	</body>
+</html>				 -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      #div1 {
+        height: 500px;
+        width: 500px;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(255, 174, 0);
+        
+      }
+      #div2 {
+        height: 250px;
+        width: 400px;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(119, 216, 222);
+        box-shadow: 0px 0px 20px;
+      }
+
+      #div2 input {
+        width: 100%;
+      }
+      #div2 select {
+        width: 100%;
+      }
+      #div2 button {
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div2">
+        
+          <label for="name">First Name</label> <br/>
+          
+          <input id="name" type="text" placeholder="Your name"/>
+          <br />
+          <br />
+          <label for="surname">Last Name</label> <br/>
+          <input id="surname" type="text" placeholder="Your last name" />
+          <br />
+          <br />
+          <label for="empid">Country</label> <br />
+          <select name="" id="Country">
+            <option value="NoSelected">None</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="US">US</option>
+            <option value="Canada">Canada</option>
+          </select>
+          <br />
+          <br>
+          <button onclick="submit()" >Button</button>
+        
+      </div>
+
+      <p id="print"></p>
+    </div>
+    
+    <script>
+      function submit() {
+        const name = document.getElementById("name").value;
+      const surname = document.getElementById("surname").value;
+      const ct = document.getElementById("Country").value;
+
+      const print = document.getElementById("print");
+
+      print.innerHTML = "My name is: " + name + "<br>" + "My surname is: " + surname + "<br>" + "My Country is: " + ct;
+        
+      }
+
+
+
+    </script>
+  </body>
+</html>

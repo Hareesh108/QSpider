@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 04</title>
+    <style>
+      table {
+        height: 800px;
+        margin-left: 600px;
+        margin-top: 200px;
+        box-shadow: 4px -4px 12px black;
+      }
+      thead {
+        background-color: #a11f90;
+      }
+      .col1 {
+        background-color: #ff7a66;
+      }
+      .col2 {
+        background-color: #ffe3b3;
+      }
+      .col3 {
+        background-color: #ffc172;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table border="2px">
+        <thead>
+          <tr>
+            <th colspan="2" align="left">SUBJECT</th>
+            <!-- <th></th> -->
+            <th>JOHN DOE</th>
+            <th>MIRIUM LUTHAR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="col2">Biology</td>
+            <td class="col1">Practical</td>
+            <td class="col3">A</td>
+            <td class="col1">A</td>
+          </tr>
+          <tr>
+            <!-- <td>5</td> -->
+            <td class="col3">Theory</td>
+            <td class="col1">A+</td>
+            <td class="col3">A</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="col1">Chemistry</td>
+            <td class="col2">Practical</td>
+            <td class="col3">B</td>
+            <td class="col2">C</td>
+          </tr>
+          <tr>
+            <!-- <td>13</td> -->
+            <td class="col3">Theory</td>
+            <td class="col2">A</td>
+            <td class="col3">C+</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="col2">Physics</td>
+            <td class="col1">Practical</td>
+            <td class="col1">A</td>
+            <td class="col1">A</td>
+          </tr>
+          <tr>
+            <!-- <td>21</td> -->
+            <td class="col3">Theory</td>
+            <td class="col1">A-</td>
+            <td class="col3">A-</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

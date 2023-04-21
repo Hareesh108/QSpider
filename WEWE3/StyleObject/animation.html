@@ -1,0 +1,203 @@
+<!-- object.style.animation="name duration timingFunction delay
+iterationCount direction fillMode playState" -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		#GFG {
+			width: 90px;
+			height: 90px;
+			background: green;
+			color: white;
+			position: relative;
+			text-align: center;
+
+			/* -webkit- is used for safari browser */
+			-webkit-animation: GFG_Move_1 1s infinite;
+
+			animation: GFG_Move_1 1s infinite;
+		}
+
+		/* For Opera, Chrome and Safari browser */
+		@-webkit-keyframes GFG_Move_1 {
+			from {
+				left: 250px;
+			}
+
+			to {
+				left: 500px;
+			}
+		}
+
+		/* For Opera, Chrome and Safari browser */
+		@-webkit-keyframes GFG_Move_2 {
+			from {
+				left: 350px;
+				top: 0px;
+			}
+
+			to {
+				left: 350px;
+				top: 200px;
+			}
+		}
+
+		@keyframes GFG_Move_1 {
+			from {
+				left: 250px;
+			}
+
+			to {
+				left: 500px;
+			}
+		}
+
+		@keyframes GFG_Move_2 {
+			from {
+				left: 350px;
+				top: 0px;
+			}
+
+			to {
+				left: 350px;
+				top: 200px;
+			}
+		}
+	</style>
+</head>
+
+<body align="center">
+	<button onclick="myGeeks()">
+		Change Animation
+	</button>
+	
+<p>
+		Click on button to change the animation.
+	</p>
+
+	<script>
+		function myGeeks() {
+
+			/* This code run on safari browser */
+			document.getElementById("GFG").style.WebkitAnimation
+				= "GFG_Move_2 4s 2";
+
+			document.getElementById("GFG").style.animation
+				= "GFG_Move_2 4s 2";
+		}
+	</script>
+
+	<div id="GFG">GFG</div>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML DOM Style animation Property
+	</title>
+
+	<style>
+		#GFG {
+			width: 90px;
+			height: 90px;
+			background: green;
+			position: relative;
+			color: white;
+			text-align: center;
+
+			/* /* For Opera, Chrome, Safari*/
+			*/ -webkit-animation: GFG_Move_1 1s infinite;
+
+			animation: GFG_Move_1 1s infinite;
+		}
+
+		/* For Opera, Chrome, Safari*/
+		@-webkit-keyframes GFG_Move_1 {
+			from {
+				left: 0px;
+			}
+
+			to {
+				left: 90px;
+			}
+		}
+
+		/* For Opera, Chrome, Safari */
+		@-webkit-keyframes GFG_Move_2 {
+			from {
+				top: 0px;
+				background: green;
+				width: 100px;
+			}
+
+			to {
+				top: 200px;
+				background: yellow;
+				width: 150px;
+				height: 150px;
+			}
+		}
+
+		@keyframes GFG_Move_1 {
+			from {
+				left: 0px;
+			}
+
+			to {
+				left: 95px;
+			}
+		}
+
+		@keyframes GFG_Move_2 {
+			from {
+				top: 0px;
+				background: green;
+				width: 100px;
+			}
+
+			to {
+				top: 200px;
+				background: yellow;
+				width: 150px;
+				height: 150px;
+			}
+		}
+	</style>
+</head>
+
+<body align="center">
+
+	<button onclick="myGeeks()">
+		Change Animation
+	</button>
+	
+<p>
+		Click on button to change the animation.
+	</p>
+
+
+	<script>
+		function myGeeks() {
+
+			/* For Opera, Chrome, Safari */
+			document.getElementById("GFG").style.WebkitAnimation
+				= "GFG_Move_2 4s 2"
+			document.getElementById("GFG").style.animation
+				= "GFG_Move_2 4s 2";
+		}
+	</script>
+
+	<div id="GFG">GFG</div>
+</body>
+
+</html> -->

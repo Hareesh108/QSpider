@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		DOM childElementCount Property
+	</title>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+
+	<h2>
+			DOM childElementCount Property
+		</h2>
+
+	<p>Searching Algorithms</p>
+
+	<ul id="parent">
+		<li>Merge sort</li>
+		<li>Quick sort</li>
+	</ul>
+
+	<button onclick="geek()">Click Here!</button>
+
+	<p id="p"></p>
+
+	<script>
+		function geek() {
+			var doc =
+				document.getElementById("parent").childElementCount;
+			document.getElementById("p").innerHTML =
+				"No of entries: " + doc;
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoBroker</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      nav {
+        width: 100%;
+        height: 100px;
+        border: 1px solid;
+        box-shadow: 0px 0.4px 10px;
+      }
+      #parent1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      #logo {
+        width: 200px;
+        /* border: 1px solid; */
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .child1 {
+        margin-top: -35px;
+        margin-left: 30px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      #bank {
+        width: 130px;
+        border: 1px solid;
+        padding: 5px;
+      }
+      #rent {
+        width: 100px;
+        border: 1px solid;
+        padding: 7px;
+      }
+      #Owner {
+        background-color: #007a6f;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+      }
+      #header {
+        width: 600px;
+        /* border: 1px solid; */
+        margin: 0 auto;
+        margin-top: 40px;
+        text-transform: capitalize;
+        font-size: 30px;
+      }
+      #homeChild {
+        width: 350px;
+        height: 25px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 1px solid;
+        padding: 10px;
+        background-color: #fceed8;
+      }
+      #pant1 {
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid; */
+      }
+      #box1 {
+        width: 400px;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 10px;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-around;
+      }
+      .box1 {
+        width: 100px;
+        height: 25px;
+        padding: 4px;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        /* border:  1px solid; */
+        font-size: large;
+        text-align: center;
+      }
+      #box-color {
+        color: #fd3752;
+        border-bottom: 1px solid #fd3752;
+        box-shadow: 0px 2px 5px;
+      }
+      #location {
+        width: 900px;
+        height: 30px;
+        margin: 0 auto;
+        padding: 5px;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+      }
+      #location-1 {
+        width: 100px;
+        height: 18px;
+        border: 1px solid;
+        padding: 10px;
+      }
+      #loc {
+        width: 500px;
+        /* height: px; */
+        padding: 10px;
+        /* border: 1px solid; */
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        border: 1px solid;
+        background-color: #fd3752;
+      }
+
+      #option {
+        width: 900px;
+        height: 40px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid;
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-start;
+      }
+      #option-1 {
+        /* height: 30px; */
+        width: 270px;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+      }
+
+      .opt {
+        margin-left: 100px;
+      }
+      #option-2 {
+        width: 270px;
+        border: 1px solid;
+        padding: 10px;
+      }
+      #option-3 {
+        width: 270px;
+        border: 1px solid;
+        padding: 10px;
+      }
+      #text-b1 {
+        width: 600px;
+        height: 40px;
+        /* border: 1px solid; */
+        margin: 0 auto;
+        margin-top: 150px;
+        text-align: center;
+        font-size: 25px;
+      }
+      #text-b2 {
+        width: 500px;
+        height: 30px;
+        border: 1px solid;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        background-color: #007a6f;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <img
+          src="https://assets.nobroker.in/static/img/logos/nb_logo_new_trans.svg"
+          alt=""
+        />
+      </div>
+      <div id="parent1">
+        <div class="child1" id="bank">
+          <div>
+            <img
+              src="https://assets.nobroker.in/nb-new/public/myBooking.svg"
+              alt=""
+            />
+          </div>
+          <div>My Bookings</div>
+        </div>
+
+        <div class="child1" id="rent">
+          <div>
+            <img
+              src="https://assets.nobroker.in/nb-new/public/payrent.png"
+              alt=""
+            />
+          </div>
+          <div>Pay Rent</div>
+        </div>
+        <div class="child1" id="Owner">For Property Owners</div>
+        <div class="child1">Sign Up</div>
+        <div class="child1">Login</div>
+        <div class="child1">Menu</div>
+      </div>
+    </nav>
+
+    <div>
+      <div id="header">World's Largest NoBrokerage Property Site</div>
+      <div id="homeChild">
+        <div class="homeChild1">
+          <img
+            id="pant1"
+            src="https://assets.nobroker.in/nb-new/public/Home/hs_banner.png"
+            alt=""
+          />
+        </div>
+        <div class="homeChild1">Painting and Cleaning | Upto 50%</div>
+      </div>
+    </div>
+    <div id="box1">
+      <div class="box1">Buy</div>
+      <div class="box1" id="box-color">Rent</div>
+      <div class="box1">Commercial</div>
+    </div>
+
+    <div id="location">
+      <div id="location-1">Maharashtra</div>
+      <div id="location-2">
+        <input
+          id="loc"
+          type="text"
+          placeholder="Search upto 3 localities or Landmark"
+        />
+      </div>
+      <div id="location-3">
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div id="option">
+      <div id="option-1">
+        <input type="radio" name="FullHouse" id="" />
+        <label for="">Flat House</label>
+        <input type="radio" name="PG" id="" />
+        <label for="">PG</label>
+        <input type="radio" name="Flat" id="" />
+        <label for="">Flatmate</label>
+      </div>
+      <div id="option-2" class="opt">BHK Type</div>
+      <div id="option-3" class="opt">Availability</div>
+    </div>
+
+    <div id="text-b1">------Are you a Property Owner?-----</div>
+    <div id="text-b2">Post Free Property Ad</div>
+  </body>
+</html>

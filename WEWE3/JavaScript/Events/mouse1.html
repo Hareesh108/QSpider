@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseup="getOver()" onmousedown="getOut()" >Remove Me!!</div>
+
+    <script>
+        function getOver() {
+            
+            const element = document.getElementById("box");
+            element.style.height="200px";
+            element.style.width="200px";
+            element.style.backgroundColor="hotpink";
+            element.innerHTML = "Hello onmouseup"
+        }
+        function getOut() {
+            
+            const element = document.getElementById("box");
+            element.style.height="200px";
+            element.style.width="200px";
+            element.style.backgroundColor="red";
+            element.textContent = "Hello onmousedown"
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<body style="text-align: center">
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+
+	<h2>
+		DOM getElementsByTagName()
+	</h2>
+
+	<p>A computer science portal for geeks.</p>
+
+	<button onclick="geek()">Try it</button>
+	<script>
+		function geek() {
+		var doc = document.getElementsByTagName("p");
+		doc[0].style.background = "green";
+		doc[0].style.color = "white";
+		}
+	</script>
+</body>
+
+
+<!-- <body style="text-align: center">
+
+	<h2 style="color: green;">
+		DOM getElementsByTagName()
+	</h2>
+
+	<p>This is the first paragraph.</p>
+
+	<p>This is the second paragraph.</p>
+
+	<p>This is the third paragraph.</p>
+
+	<button onclick="geek()">Try it</button>
+
+	<script>
+		function geek() {
+		var doc = document.getElementsByTagName("P");
+		var i;
+		for (i = 0; i < doc.length; i++) {
+			doc[i].style.backgroundColor = "green";
+			doc[i].style.color = "white";
+		}
+		}
+	</script>
+</body> -->

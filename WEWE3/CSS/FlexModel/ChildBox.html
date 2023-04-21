@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Box</title>
+    <style>
+        #main{
+            height: 500px;
+            /* width: 400px; */
+            background-color:rgb(69, 69, 69);
+            border: 1px solid;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+            align-content: flex-end;
+
+        }
+        .box{
+            text-align: center;
+            height: 100px;
+            width: 60px;
+            border: 1px solid;
+            background-color: rgb(241, 205, 77);
+            flex-basis: 15%;
+        }
+        
+         /* Child Property */
+        #box2{
+           
+             order: 2;
+            flex-basis: 200px;
+            
+        } 
+
+        #box4{
+            height: 250px;
+            flex-grow: 1;
+        }
+        #box12{
+            height: 50px;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+        <div class="box" id="box6">Box6</div>
+        <div class="box" id="box7">Box7</div>
+        <div class="box" id="box8">Box8</div>
+        <div class="box" id="box9">Box9</div>
+        <div class="box" id="box10">Box10</div>
+
+        <div class="box" id="box11">Box11</div>
+        <div class="box" id="box12">Box12</div>
+    </div>
+    
+</body>
+</html>

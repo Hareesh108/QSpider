@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function Declaration
+        function demo(name) {
+            console.log("My name is " + name);
+        }
+        demo("Hareesh") //Caller
+
+        function RandomNumber(){
+            return Math.round(Math.random() * 10000);
+        }
+
+        console.log(RandomNumber());
+
+        function demo1(x,y,z) {
+            console.log("My name is Hareesh");
+            console.log(x,y,z);
+            return x+y+z
+        }
+        demo1(1,2,3,"hareesh") //steel it will work
+        const res = demo1(1,2,3);
+        console.log(res);
+    </script>
+    
+</body>
+</html>

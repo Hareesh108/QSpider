@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="doSubmit()">
+        <input type="text" id="inp1">
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <script>
+        function doSubmit() {
+            const inp = document.getElementById("inp1").value;
+            if (inp == "Hareesh") {
+                alert("Your from is submitted!!");
+            } else {
+                alert("Your from is not submitted!!");
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>

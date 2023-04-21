@@ -1,0 +1,96 @@
+<!-- object.style.borderStyle = "none | hidden | dotted | dashed | 
+solid | double | groove | ridge | inset | outset | initial |
+inherit" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+	DOM Style borderStyle Property
+	</title>
+	<style>
+		.item {
+			padding: 10px;
+			border: 15px solid green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">
+	GeeksforGeeks
+	</h1>
+	<b>
+	DOM Style borderStyle Property
+	</b>
+	<p class="item">
+		GeeksforGeeks is a computer science
+	portal with a huge variety of well written
+	and explained computer science and
+	programming articles, quizzes and
+	interview questions.
+	</p>
+	<button onclick="changeBorderStyle()">
+	Change style
+	</button>
+
+	<script>
+		function changeBorderStyle() {
+		
+			elem = document.querySelector('.item');
+
+			// Setting the border style
+			elem.style.borderStyle = 'none';
+		}
+	</script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+	DOM Style borderStyle Property
+	</title>
+	<style>
+		.item {
+			padding: 10px;
+			border: 15px solid green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">
+	GeeksforGeeks
+	</h1>
+	<b>
+	DOM Style borderStyle Property
+	</b>
+	<p class="item">
+	GeeksforGeeks is a computer science
+	portal with a huge variety of well
+	written and explained computer science
+	and programming articles, quizzes and
+	interview questions.
+	</p>
+	<button onclick="changeBorderStyle()">
+		Change style
+	</button>
+
+	<script>
+		function changeBorderStyle() {
+			elem = document.querySelector('.item');
+
+			// Setting the border style
+			elem.style.borderStyle = 'hidden';
+		}
+	</script>
+</body>
+
+</html>

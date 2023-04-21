@@ -1,0 +1,28 @@
+<!DOCTYPE html.5>
+<html>
+	<head>
+		<title>DOM doctype Property</title>
+		<style>
+			h1, h2 {
+				color:green;
+				font-weight:bold;
+				text-align:center;
+			}
+			body {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body style="text-align:center;">
+		<h1>GeeksForGeels</h1>
+		<h2>DOM doctype Property</h2>
+		<button onclick="geeks()">Submit</button>
+		<p id="sudo"></p>
+		<script>
+			function geeks() {
+				var gfg = document.doctype.name;
+				document.getElementById("sudo").innerHTML = gfg;
+			}
+		</script>
+	</body>
+</html>				

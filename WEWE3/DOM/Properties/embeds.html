@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h3>HTML DOM embeds Collection</h3>
+	<embed id="gfgEmbed" src="gfg.swf">
+	
+<p>
+		Click the button to see the URL
+		for the embedded flash file.
+	</p>
+
+
+
+	<button onclick="gfg()">Click Me</button>
+	<p id="show"></p>
+
+
+
+	
+	<script>
+	function gfg() {
+		var g = document.getElementById("gfgEmbed").src;
+		document.getElementById("show").innerHTML = "URL: " + g;
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action: Used to specify the URL of the page to submit the form data to.
+method: Used to specify the HTTP method to be used when submitting the form data (e.g., "get" or "post").
+name: Used to specify a name for the form, which can be used to identify the form in scripts.
+target: Used to specify where to display the response after the form is submitted (e.g., in a new window or in a named frame).
+enctype: Used to specify how the form data should be encoded when it is submitted (e.g., as "application/x-www-form-urlencoded" or "multipart/form-data").
+accept-charset: Used to specify the character encodings that are acceptable for the form data. -->
+
+    <form
+      action="/submit-form.php"
+      method="post"
+      name="contact-form"
+      target="_blank"
+      enctype="application/x-www-form-urlencoded"
+      accept-charset="UTF-8"
+    >
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

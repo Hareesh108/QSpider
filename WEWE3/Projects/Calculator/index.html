@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <title>Calculator</title>
+    <style>
+      #parent {
+        height: 535px;
+        width: 348px;
+        /* border: 1px solid; */
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px;
+      }
+
+      #child1 {
+        height: 100px;
+        width: 348px;
+        /* border: 1px solid; */
+        background-color: #e4508f;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+        line-height: 150px;
+        text-indent: 10px;
+        letter-spacing: 1.3px;
+      }
+      #child2 {
+        height: 432px;
+        width: 348px;
+        /* border: 1px solid; */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .pick {
+        width: 85px;
+        height: 85px;
+        border: 1px solid;
+        text-align: center;
+        line-height: 65px;
+        text-shadow: 0px 0px 10px;
+        background-color: #f5a855;
+      }
+      .pick:hover {
+        width: 85px;
+        height: 85px;
+        border: 1px solid;
+        text-align: center;
+        line-height: 65px;
+        text-shadow: 0px 0px 10px;
+        background-color: #ff8903;
+      }
+      img {
+        width: 83px;
+        height: 83px;
+      }
+      #img1 {
+        width: 63px;
+        height: 63px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      button {
+        width: 84px;
+        height: 84px;
+        font-size: 35px;
+      }
+      #redius2 {
+        border-bottom-left-radius: 20px;
+      }
+      #redius1 {
+        border-bottom-right-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child1"></div>
+      <div id="child2">
+        <div class="pick">Clear</div>
+        <div class="pick">&larr;</div>
+        <div class="pick">%</div>
+        <div class="pick">/</div>
+        <div class="pick">7</div>
+        <div class="pick">8</div>
+        <div class="pick">9</div>
+        <div class="pick">*</div>
+        <div class="pick">4</div>
+        <div class="pick">5</div>
+        <div class="pick">6</div>
+        <div class="pick">-</div>
+        <div class="pick">1</div>
+        <div class="pick">2</div>
+        <div class="pick">3</div>
+        <div class="pick">+</div>
+        <div class="pick" id="redius2">(</div>
+        <div class="pick">0</div>
+        <div class="pick">)</div>
+        <div class="pick" id="redius1">=</div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

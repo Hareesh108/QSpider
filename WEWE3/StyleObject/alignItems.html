@@ -1,0 +1,327 @@
+<!-- object.style.alignItems = "stretch|center|flex-start|flex-end|
+baseline|initial|inherit" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+
+			/* setting align-items to center to observe the
+			effect of the stretch value */
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+	alignItems property to 'stretch'</p>
+
+	<div class="main">
+		<div style="background-color:lightblue;">
+		Item 1 </div>
+		<div style="background-color:lightgreen;">
+		Item 2 </div>
+		<div style="background-color:lightsalmon;">
+		Item 3 </div>
+		<div style="background-color:lightyellow;">
+		Item 4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to stretch
+			elem.style.alignItems = 'stretch';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+		alignItems property to 'center'</p>
+
+	<div class="main">
+		<div style="background-color:lightblue;">
+		Item 1 </div>
+		<div style="background-color:lightgreen;">
+		Item 2 </div>
+		<div style="background-color:lightsalmon;">
+		Item 3 </div>
+		<div style="background-color:lightyellow;">
+		Item 4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to center
+			elem.style.alignItems = 'center';
+		}
+	</script>
+</body>
+
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+	alignItems property to 'flex-start'</p>
+
+	<div class="main">
+		<div style="background-color:lightblue;">
+		Item 1 </div>
+		<div style="background-color:lightgreen;">
+		Item 2 </div>
+		<div style="background-color:lightsalmon;">
+		Item 3 </div>
+		<div style="background-color:lightyellow;">
+		Item 4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to flex-start
+			elem.style.alignItems = 'flex-start';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+		}
+		
+		#parent {
+			/* Setting the parent div's
+			align-items to flex-end */
+			align-items: flex-end;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+	alignItems property to 'inherit'</p>
+
+	<div id="parent">
+		<div class="main">
+			<div style="background-color:lightblue;">
+			Item 1 </div>
+			<div style="background-color:lightgreen;">
+			Item 2 </div>
+			<div style="background-color:lightsalmon;">
+			Item 3 </div>
+			<div style="background-color:lightyellow;">
+			Item 4 </div>
+		</div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to inherit from parent div
+			elem.style.alignItems = 'inherit';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			/* setting align-items to center
+			to observe the effect of the
+			initial value */
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+	alignItems property to 'initial'</p>
+
+	<div class="main">
+		<div style="background-color:lightblue;">
+		Item 1 </div>
+		<div style="background-color:lightgreen;">
+		Item 2 </div>
+		<div style="background-color:lightsalmon;">
+		Item 3 </div>
+		<div style="background-color:lightyellow;">
+		Item 4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to initial
+			elem.style.alignItems = 'initial';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignItems Property</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignItems Property</b>
+	<p>Click on the button to change the
+	alignItems property to 'baseline'</p>
+
+	<div class="main">
+		<div style="background-color:lightblue;">
+		Item 1 </div>
+		<div style="background-color:lightgreen;">
+		Item 2 </div>
+		<div style="background-color:lightsalmon;">
+		Item 3 </div>
+		<div style="background-color:lightyellow;">
+		Item 4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignItems property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('.main');
+
+			// Setting alignItems to baseline
+			elem.style.alignItems = 'baseline';
+		}
+	</script>
+</body>
+
+</html> -->
+

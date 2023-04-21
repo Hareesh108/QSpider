@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  background-image: url(./Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  /* background-color: lightcoral; */
+}
+
+.nav-items {
+  display: flex;
+  float: right;
+  /* margin:0px; */
+  margin-right: 50px;
+}
+
+.nav-items a {
+  margin: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-items a img {
+  margin-top: -3px;
+  height: 25px;
+  filter: invert();
+  cursor: pointer;
+  background: transparent;
+}
+
+.mid-section {
+  width: 200px;
+  height: 150px;
+  margin: 60px;
+}
+
+.mid-section img {
+  margin-bottom: -15px;
+  margin-right: -80px;
+}
+.google-img {
+  margin-left: -100px;
+  height: 200px;
+  width: 335px;
+  cursor: pointer;
+}
+
+input {
+  padding: 13px 45px;
+  margin-left: -368px;
+  width: 575px;
+  border: none;
+  border-radius: 50px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+.bar {
+  display: inline-flex;
+}
+.search {
+  height: 18px;
+  width: 18px;
+  margin-left: -460px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.mic {
+  height: 25px;
+  width: 28px;
+  margin-left: -45px;
+  /* margin-bottom: 10px; */
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.shortcut {
+  height: 40px;
+  width: 40px;
+  margin: 30px;
+  display: inline-flex;
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.shortcut img {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.shortcut-container p {
+  color: white;
+  display: inline-flex;
+  margin: 25px;
+}
+
+.ptag {
+  margin: -50px;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.main-container {
+  display: inline-flex;
+}
+
+.container {
+  margin: 50px;
+  margin-top: 25px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+}
+
+.container img {
+  height: 25px;
+  width: 25px;
+  margin-top: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.p-container {
+  height: 35px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 8px;
+  /* margin: 80px; */
+  margin-top: 20px;
+  margin-left: -20px;
+  font-size: 15px;
+  color: grey;
+  cursor: pointer;
+}

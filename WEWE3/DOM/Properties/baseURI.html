@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<title>baseURI property</title>
+		<style>
+			h1 {
+				color:green;
+			}
+			body {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GeeksforGeeks</h1>
+		<h2>DOM baseURI Property</h2>
+		</h2>
+		<button onclick = "geeks()">Submit</button>
+		<p id="gfg"></p>
+
+
+
+
+		<script>
+			function geeks() {
+				var x = document.baseURI;
+				document.getElementById("gfg").innerHTML =
+					"The base URI of the page: " + x;
+			}
+		</script>
+	</body>
+</html>				

@@ -1,0 +1,153 @@
+.container {
+  height: 550px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px;
+}
+
+.side1 {
+  height: 550px;
+  width: 250px;
+  background-color: #2874f0;
+  position: fixed;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.spanid {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.logintxt {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  color: antiquewhite;
+  width: 170px;
+}
+
+img {
+  margin-top: 250px;
+  margin-left: 50px;
+  height: 100px;
+  width: 120px;
+}
+
+.side2 {
+  height: 550px;
+  width: 350px;
+  background-color: whitesmoke;
+  position: absolute;
+  margin-left: 250px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+input[type='email']:focus {
+  outline: none;
+}
+
+input[type='email'] {
+  width: 85%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-top: 50px;
+  border-bottom-color: #2874f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input[type='password']:focus {
+  outline: none;
+}
+
+input[type='password'] {
+  width: 85%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-top: 30px;
+  border-bottom-color: #2874f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.term {
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  width: 280px;
+  height: 30px;
+  padding-top: 10px;
+  margin-left: 40px;
+  font-family: 'Sans', sans-serif;
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type='submit'] {
+  width: 85%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-left: 40px;
+  font-weight: bolder;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  background-color: #fb641b;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.or {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+input[type='reset'] {
+  width: 85%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin-left: 40px;
+  font-weight: bolder;
+  font-family: 'Noto Sans', sans-serif;
+  color: #2874f0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px grey;
+  cursor: pointer;
+}
+
+.new {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: small;
+}
+a {
+  color: blue;
+}

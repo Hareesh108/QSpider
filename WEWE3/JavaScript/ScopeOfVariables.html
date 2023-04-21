@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScopeOfVariables</title>
+  </head>
+  <body>
+    <script>
+      console.log('Start:');
+      // GLOBAL SCOPE: The visibility of a variable is throughout the class.
+      // We can access this global scope variable any where throughout the class
+
+      var a = 10;
+      if (true) {
+        var a = 50;
+        console.log('Using var : ' + a);
+      }
+      console.log('Using var : ' + a);
+
+      // BLOCK SCOPE: If we are declared this variable in block(If block), We cannot
+      // Able to access this variable outside od the block this is called as
+      
+      // Block scope variable Ex. Let, Const
+      let b = 20;
+      if (true) {
+        let b = 90;
+        console.log('Using Let : ' + b);
+      }
+      console.log("Using Let : "+ b);
+
+      const c = 30;
+      if (true) {
+        const c = 100;
+        console.log('Using Const : ' + c);
+      }
+      console.log('Using Const : ' + c);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h1><center>Geeks
+	<button onclick="node()">Press</button>
+</center> </h1>
+
+		<h4>Clicking on the 'Press' button will return
+		the length of childNodes[0].</h4>
+
+	<p id="gfg"></p>
+
+	<script>
+		function node() {
+		
+			// Return the length of child node.
+			var c = document.getElementsByTagName(
+			"BUTTON")[0];
+			var x = c.childNodes[0].length;
+			document.getElementById("gfg").innerHTML = x;
+		}
+	</script>
+
+</body>
+
+</html>

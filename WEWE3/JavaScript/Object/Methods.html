@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {name:"Samsung",price:1100}
+
+        // Add
+        // obj.make ="Germany"
+        console.log(obj);
+
+        // Delete 
+        // delete obj.name
+        console.log(obj);
+
+        // values(): 
+
+        console.log(Object.values(obj));
+        // Keys()
+        console.log(Object.keys(obj));
+
+        // seal() Used to restrict the new object entering, But we can modify that object itself
+        console.log(Object.seal(obj));
+
+        // freeze() It is not allow us to modify the object
+        console.log(Object.freeze(obj));
+
+        // entries() It is used to convert an object into an arrays
+        console.log(Object.entries(obj));
+  
+        // assign() used to merging an object
+
+        let user = {name:"harry",age:22}
+        let Addinfo = {weight:55}
+        console.log(Object.assign(user,Addinfo));
+    </script>
+    
+</body>
+</html>

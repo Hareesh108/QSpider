@@ -1,0 +1,302 @@
+<!-- object.style.alignSelf = "auto | stretch | center | flex-start |
+flex-end | baseline | initial | inherit" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignSelf Property
+	</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			align-items: center;
+		}
+		
+		#item {
+			/* setting align-self to
+			flex-end to observe the
+			effect of the auto value */
+			align-self: flex-end;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks
+	</h1>
+
+	<b>DOM Style alignSelf Property</b>
+	<p>Click on the button to change the alignSelf
+	property to 'auto'</p>
+
+	<div class="main">
+		<div style="background-color:green;">
+			GFG1 </div>
+		<div style="background-color:white;">
+			GFG2 </div>
+		<div id="item" style="background-color:green;">
+			GFG3 </div>
+		<div style="background-color:white;">
+			GFG4 </div>
+	</div>
+
+	<button onclick="changePos()">
+		Change alignSelf property</button>
+
+	<script>
+		function changePos() {
+
+			elem = document.querySelector('#item');
+
+			// Setting alignSelf to auto
+			elem.style.alignSelf = 'auto';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignSelf Property
+	</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			/* setting align-items to
+			center to observe the
+			effect of the strench value */
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks</h1>
+	<b>DOM Style alignSelf Property</b>
+	<p>Click on the button to change the
+	alignSelf property to 'stretch'</p>
+
+	<div class="main">
+		<div style="background-color:green;">
+		GFG1 </div>
+		<div style="background-color:white;">
+		GFG2 </div>
+		<div id="item"
+			style="background-color:green;">
+		GFG3 </div>
+		<div style="background-color:white;">
+		GFG4 </div>
+	</div>
+	<button onclick="changePos()">Change alignSelf property
+	</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('#item');
+
+			// Setting alignSelf to stretch
+			elem.style.alignSelf = 'stretch';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignSelf Property
+	</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			/* setting align-items to
+			center to observe the
+			effect of the center value */
+			align-items: stretch;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks
+	</h1>
+	<b>DOM Style alignSelf Property</b>
+	<p>Click on the button to change the
+	alignSelf property to 'center'</p>
+
+	<div class="main">
+		<div style="background-color:green;">
+		GFG1 </div>
+		<div style="background-color:white;">
+		GFG2 </div>
+		<div id="item"
+			style="background-color:green;">
+		GFG3 </div>
+		<div style="background-color:white;">
+		GFG4 </div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignSelf property</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('#item');
+
+			// Setting alignSelf to center
+			elem.style.alignSelf = 'center';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignSelf Property
+	</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			/* this itself is the
+		parent of the item */
+			align-items: center;
+		}
+		
+		#item {
+			/* setting align-self to
+		flex-end to observe the
+			effect of the inherit value */
+			align-self: flex-end;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks
+	</h1>
+	<b>DOM Style alignSelf Property</b>
+	<p>Click on the button to change the
+	alignSelf property to 'inherit'</p>
+
+	<div id="parent">
+		<div class="main">
+			<div style="background-color:green;">
+			GFG1 </div>
+			<div style="background-color:white;">
+			GFG2 </div>
+			<div id="item"
+				style="background-color:green;">
+			GFG3 </div>
+			<div style="background-color:white;">
+			GFG4 </div>
+		</div>
+	</div>
+
+	<button onclick="changePos()">
+	Change alignSelf property</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('#item');
+
+			// Setting alignSelf to inherit
+			elem.style.alignSelf = 'inherit';
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOM Style alignSelf Property
+	</title>
+	<style>
+		.main {
+			width: 200px;
+			height: 150px;
+			border: solid;
+			display: flex;
+			align-items: center;
+		}
+		
+		#item {
+			/* setting align-self to
+			flex-end to observe the
+			effect of the initial value */
+			align-self: flex-end;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">GeeksforGeeks
+	</h1>
+	<b>DOM Style alignSelf Property</b>
+	<p>Click on the button to change the
+	alignSelf property to 'initial'</p>
+
+	<div class="main">
+		<div style="background-color:green;">
+		GFG1 </div>
+		<div style="background-color:white;">
+		GFG2 </div>
+		<div id="item"
+			style="background-color:green;">
+		GFG3 </div>
+		<div style="background-color:white;">
+		GFG4 </div>
+	</div>
+	<button onclick="changePos()">
+	Change alignSelf property</button>
+
+	<script>
+		function changePos() {
+			elem = document.querySelector('#item');
+
+			// Setting alignSelf to initial
+			elem.style.alignSelf = 'initial';
+		}
+	</script>
+</body>
+
+</html> -->

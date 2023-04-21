@@ -1,0 +1,133 @@
+<!-- object.style.alignContent = "stretch | center | flex-start |
+flex-end | space-between | space-around | initial | inherit" -->
+
+<!DOCTYPE html>
+<html>
+<title>DOM Style alignContent property</title>
+
+<head>
+	<style>
+		.main {
+			width: 250px;
+			height: 300px;
+			border: 1px solid;
+			display: flex;
+			flex-flow: row wrap;
+			/* setting to space-around to
+			observe the effect of 'stretch'*/
+			align-content: space-around;
+		}
+
+		.main div {
+			width: 250px;
+			height: 70px;
+			font-size: 2rem;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">
+		GeeksforGeeks
+	</h1>
+	<b>DOM Style alignContent</b>
+
+	
+<p>Click the button to change the
+		value of the alignContent to "stretch"</p>
+
+
+	<div class="main">
+		<div style="background-color:green;">
+			Geeks
+		</div>
+		<div style="background-color:lightgreen;">
+			For
+		</div>
+		<div style="background-color:green;">
+			Geeks
+		</div>
+	</div>
+
+	<button onclick="changeAlign()">
+		Change alignContent
+	</button>
+
+	<script>
+		function changeAlign() {
+			document.querySelector('.main').style.alignContent =
+				"stretch";
+		}
+	</script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<title>
+	DOM Style alignContent property
+</title>
+
+<head>
+	<style>
+		.main {
+			width: 250px;
+			height: 300px;
+			border: 1px solid;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.main div {
+			width: 250px;
+			height: 70px;
+			font-size: 2rem;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green">
+		GeeksforGeeks
+	</h1>
+	<b>DOM Style alignContent</b>
+
+	
+<p>Click the button to change the
+		value of the alignContent to "center"</p>
+
+
+	<div class="main">
+		<div style="background-color:green;">
+			Geeks
+		</div>
+		<div style="background-color:lightgreen;">
+			For
+		</div>
+		<div style="background-color:green;">
+			Geeks
+		</div>
+	</div>
+
+	<button onclick="changeAlign()">
+		Change alignContent
+	</button>
+
+	<script>
+		function changeAlign() {
+			document.querySelector('.main').style.alignContent =
+				"center";
+		}
+	</script>
+
+</body>
+
+</html> -->

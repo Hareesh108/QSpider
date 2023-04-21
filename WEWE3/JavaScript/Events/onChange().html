@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="vehicle" onChange="onChange()">
+        <option value="NoCarSelected">None</option>
+        <option value="BMW">BMW</option>
+        <option value="AUDI">AUDI</option>
+        <option value="ROLLS ROYCE">ROLLS ROYCE</option>
+        <option value="LAMBO">LAMBO</option>
+    </select>
+    <p id="print"></p>
+
+    <script>
+        function onChange() {
+            const car = document.getElementById("vehicle").value;
+            const print = document.getElementById("print");
+            print.innerHTML = "Your selected car is: "+ car+"<br>" + Date();
+            print.style.backgroundColor="hotpink"
+            print.style.padding="10px"
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print"></p>
+    <button ondblclick="getDouble()">Double Click</button>
+    <script>
+        function getDouble() {
+            // const print = document.getElementById("print").innerHTML = "This is Double Click event listener";
+            // const print = document.getElementById("print").textContent = "This is Double Click event listener";
+            const print = document.getElementById("print").innerText = "This is Double Click event listener";
+            print.style.backgroundColor="hotpink"
+            print.style.padding="20px"
+            
+        }
+
+    </script>
+    
+</body>
+</html>

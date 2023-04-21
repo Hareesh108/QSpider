@@ -1,0 +1,42 @@
+<center>
+	<h1 style="color:green;width:50%;">
+		GeeksforGeeks
+	</h1>
+	<h2>DOM getAttribute() Method</h2>
+	<br>
+	<button id="button" onclick="geeks()">Submit</button>
+	<p id="gfg"></p>
+
+
+	<script>
+		function geeks() {
+			var rk =
+			document.getElementById("button").getAttribute("onClick");
+			document.getElementById("gfg").innerHTML = rk;
+		}
+	</script>
+</center>
+
+
+<!-- <center>
+	<h1 style="color:green;width:50%;">
+		GeeksforGeeks
+	</h1>
+	<h2>DOM getAttribute() Method</h2>
+	<a id="gfg" href="www.geeksforgeeks.com">
+		GeeksforGeeks
+	</a>
+	<br>
+	<br>
+	<button id="button" onclick="geeks()">Submit</button>
+	<br>
+	<p id="rk"></p>
+
+
+	<script>
+		function geeks() {
+			var rk = document.getElementById("gfg").getAttribute("href");
+			document.getElementById("rk").innerHTML = rk;
+		}
+	</script>
+</center> -->

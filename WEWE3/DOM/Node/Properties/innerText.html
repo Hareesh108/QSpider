@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML DOM innerText Property
+	</title>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>HTML DOM textContent Property</h2>
+	<button id="geeks" onclick="MyGeeks()">
+		Submit
+	</button>
+	<p id="sudo"></p>
+	<script>
+		function MyGeeks() {
+			var text =
+				document.getElementById("geeks").innerText;
+			document.getElementById("sudo").innerHTML = text;
+		}
+	</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HTML DOM innerText Property
+	</title>
+</head>
+
+<body>
+	<center>
+		<h1>GeeksforGeeks</h1>
+		<h2>HTML DOM innerText Property</h2>
+		<p id="geeks" style="font-size:20px;">Hello Geeks!</p>
+		<button onclick="MyGeeks()">
+			Submit
+		</button>
+		<!-- MyGeeks function replace the inner text-->
+		<script>
+			function MyGeeks() {
+				document.getElementById("geeks").innerText =
+								"Welcome to GeeksforGeeks!";
+			}
+		</script>
+	</center>
+</body>
+</html>

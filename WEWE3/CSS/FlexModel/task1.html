@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="../Basic/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <style>
+      #tray {
+        height: 500px;
+        width: 500px;
+        border: 1px solid;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+
+        /* Main Axis */
+
+        /* justify-content: left;
+          justify-content: center;
+          justify-content: right;
+          justify-content: flex-end;
+          justify-content: space-between;
+          justify-content:space-around; */
+        justify-content: space-evenly;
+
+        /* Cross Axis */
+
+        /* align-items: flex-end;
+        align-items: flex-start; */
+        align-items: center;
+
+        /* align-content: flex-start; */
+      }
+      .glass {
+        height: 100px;
+        width: 60px;
+        border: 1px solid;
+        background-color: aqua;
+      }
+      #glass3 {
+        /* order: 1; */
+        order: -1;
+      }
+      #glass4 {
+        order: 1;
+      }
+      #glass5 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tray">
+      <div class="glass" id="glass1">Glass1</div>
+      <div class="glass" id="glass2">Glass2</div>
+      <div class="glass" id="glass3">Glass3</div>
+      <div class="glass" id="glass4">Glass4</div>
+      <div class="glass" id="glass5">Glass5</div>
+    </div>
+  </body>
+</html>

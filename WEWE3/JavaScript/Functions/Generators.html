@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generators</title>
+  </head>
+  <body>
+    <script>
+      function* generator() {
+        yield 1;
+        yield 2;
+        yield 3;
+      }
+      var generator = generator();
+
+      for (let value of generator) {
+        console.log(value);
+      }
+
+      // Output:
+      // 1
+      // 2
+      // 3
+
+      // or
+
+    //   console.log(generator.next().value); // 1
+    //   console.log(generator.next().value); // 2
+    //   console.log(generator.next().value); // 3
+
+    //   function* generator(x) {
+    //     const y = 2 * (yield x + 1);
+    //     const z = yield y / 3;
+    //     return x + y + z;
+    //   }
+
+    //   var generator = generator(5);
+    //   console.log(generator.next().value); // 6
+    //   console.log(generator.next(12).value); // 8
+    //   console.log(generator.next(13).value); // 42
+
+    //   function* generator1() {
+    //     yield* [1, 2, 3];
+    //   }
+
+    //   function* generator2() {
+    //     yield 0;
+    //     yield* generator1();
+    //     yield 4;
+    //   }
+
+    //   var generator = generator2();
+    //   console.log(generator.next().value); // 0
+    //   console.log(generator.next().value); // 1
+    //   console.log(generator.next().value); // 2
+    //   console.log(generator.next().value); // 3
+    //   console.log(generator.next().value); // 4
+    </script>
+  </body>
+</html>

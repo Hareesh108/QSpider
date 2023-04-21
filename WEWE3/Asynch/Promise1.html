@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              const makeAsyncRequest = () => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            // async code goes here
+            resolve('Async request completed');
+          }, 0);
+        });
+      };
+
+      const consumeAsyncRequest = async () => {
+        try {
+          const result = await makeAsyncRequest();
+          console.log(result); // 'Async request completed'
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      consumeAsyncRequest();
+
+      console.log('Hii');
+      console.log('Hii');
+      console.log('Hii');
+      console.log('Hii');
+      console.log('Hii');
+      console.log('Hii');
+
+    </script>
+    
+</body>
+</html>

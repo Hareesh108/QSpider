@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeCasting</title>
+</head>
+<body>
+    <script>
+        // Implicite type casting
+        console.log(typeof s + " String") //sString
+        console.log(5+5) //10
+        console.log( "a" - 5) //NaN
+        console.log(true+1)//2
+        console.log(false-2) //-2
+        console.log("a"-"a") //NaN
+        console.log(null-1) //-1
+        console.log(3 + undefined);
+        console.log(null + undefined);
+        console.log("2" + 4 + 5 + 7);
+        console.log(3 + 4 + "6"+2+4);
+
+        // Explicite TypeCasting
+        console.log(Number("5") + 5)
+        
+        console.log(Boolean(1) + 2)
+        console.log(Number("a") + "a")
+        // console.log(String(H) + "reesh")
+
+    </script> 
+</body>
+</html>

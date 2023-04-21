@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2>GeeksforGeeks</h2>
+	<p id="GfG">GeeksforGeeks URL:
+		<br/>
+		<span id="GfG">
+			https://www.geeksforgeeks.org/
+		</span>
+	</p>
+
+
+	<script>
+		document.getElementById(
+			"https://www.geeksforgeeks.org/")
+			.textContent = document.URL;
+	</script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM document.URL() Property</title>
+	<style>
+	h1 {
+		color: green;
+	}
+	
+	h2 {
+		font-family: Impact;
+	}
+	
+	body {
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h2>DOM document.URL() Property</h2>
+	
+<p>
+		For displaying the URL of the document,
+		double click the "View URL" button:
+	</p>
+
+
+	<button ondblclick="myURL()">View URL</button>
+	<p id="url"></p>
+
+
+	<script>
+	function myURL() {
+		var gfg = document.URL;
+		document.getElementById("url").innerHTML = gfg;
+	}
+	</script>
+</body>
+
+</html> -->

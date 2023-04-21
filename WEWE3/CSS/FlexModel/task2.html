@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Basic/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Box Model</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #main{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid;
+            display: flex;
+            background-color: rgb(84, 93, 121);
+
+            /* Here it will not compress the content of box */
+            /* Flex Direction */
+
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+            /* Flex Wrap */
+
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap; */
+
+            /* Flex-Flow: colum wrap */
+
+            flex-flow: row wrap;
+
+            align-content: flex-end;
+        }
+        .box{
+            height: 100px;
+            width: 60px;
+            border: 1px solid;
+            background-color: rgb(255, 113, 12);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+        <div class="box">Box9</div>
+        <div class="box">Box10</div>
+
+        <div class="box">Box11</div>
+        <div class="box">Box12</div>
+
+        
+    </div>
+    
+</body>
+</html>

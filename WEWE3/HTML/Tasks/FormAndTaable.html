@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Form</title>
+  </head>
+  <body>
+    <form action="">
+    <table border="2px solid" cellpadding="6px" cellspacing="5px" >
+        <tr>
+            <th colspan="2">ACADEMIC FORM 2022</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+            <td>
+                <input
+                type="text"
+                id="name"
+                placeholder="enter your name"
+                autofocus
+                minlength="0"
+                maxlength="20"
+              />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="your mail"
+                required
+                value="harry@gmail.com"
+              />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password:</label>
+            </td>
+            <td>
+                <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="******"
+                minlength="4"
+                maxlength="12"
+              />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Contact:</label>
+            </td>
+            <td>
+                <select name="" id="">
+                    <option value="" disabled>Select STD Code</option>
+                    <option value="">+1 USA</option>
+                    <option value="" selected>+91 IND</option>
+                  </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="SUBMIT" />
+                <input type="reset" value="RESET" />
+            </td>
+            <!-- <td></td> -->
+        </tr>
+        
+      </form>
+    </table>
+  </body>
+</html>
